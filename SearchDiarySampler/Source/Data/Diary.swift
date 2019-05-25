@@ -8,7 +8,7 @@ extension Entity {
     }
     
     struct Diary {
-        let postDate: AppDelegate
+        let postDate: Timestamp
         let title: String
         let content: String
         let category: Category
