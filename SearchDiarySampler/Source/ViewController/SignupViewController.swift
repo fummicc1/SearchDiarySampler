@@ -38,6 +38,16 @@ class SignupViewController: UIViewController {
             self?.registerButton.alpha = value ? 1.0 : 0.5
             self?.registerButton.isEnabled = value
         }).disposed(by: disposeBag)
+        
+        viewModel?.isSignup.subscribe({ [weak self] event in
+            guard let self = self , let element = event.element else { return }
+            if element {
+                // ここ、Driver使ってないのいにアラートが表示されたの謎.
+                let alert = UIAlertController(title: "登録まであと少しです。", message: "認証メールアドレスを送信しました。確認をお願いします。", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }).disposed(by: disposeBag)
     }
 }
 

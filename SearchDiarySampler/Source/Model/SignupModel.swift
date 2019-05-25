@@ -13,7 +13,7 @@ final class SignupModel {
     
     func singup(email: String, password: String) -> Single<User> {
         return Single.create(subscribe: { (singleEvent) -> Disposable in
-            Auth.auth().signIn(withEmail: email, password: password, completion: { (result, error) in
+            Auth.auth().createUser(withEmail: email, password: password, completion: { (result, error) in
                 if error != nil {
                     singleEvent(.error(AuthError.failedRegistration))
                     return

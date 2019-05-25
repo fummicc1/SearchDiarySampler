@@ -23,6 +23,7 @@
 		D3BE918E22992665004E0FB8 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE918D22992665004E0FB8 /* Diary.swift */; };
 		D3BE9195229927A0004E0FB8 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE9194229927A0004E0FB8 /* SignupViewModel.swift */; };
 		D3BE9197229927ED004E0FB8 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE9196229927ED004E0FB8 /* SignupModel.swift */; };
+		D3E7AF17229985C400EB3934 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7AF16229985C400EB3934 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D3BE918D22992665004E0FB8 /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		D3BE9194229927A0004E0FB8 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		D3BE9196229927ED004E0FB8 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		D3E7AF16229985C400EB3934 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		DA0FA0DDEB657E2AC64C2334 /* Pods-SearchDiarySampler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDiarySampler.release.xcconfig"; path = "Target Support Files/Pods-SearchDiarySampler/Pods-SearchDiarySampler.release.xcconfig"; sourceTree = "<group>"; };
 		E125659B51B03BDF95264D8F /* Pods_SearchDiarySamplerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchDiarySamplerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB860F0938437B73569F3BDD /* Pods-SearchDiarySamplerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDiarySamplerUITests.release.xcconfig"; path = "Target Support Files/Pods-SearchDiarySamplerUITests/Pods-SearchDiarySamplerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		D3BE9185229924CB004E0FB8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D3E7AF15229985B200EB3934 /* Extension */,
 				D349FC6C22992419003AF4B9 /* AppDelegate.swift */,
 				D3BE91882299260F004E0FB8 /* Data */,
 				D3BE91932299277B004E0FB8 /* Model */,
@@ -222,6 +225,14 @@
 				D3BE9196229927ED004E0FB8 /* SignupModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D3E7AF15229985B200EB3934 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D3E7AF16229985C400EB3934 /* String+Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D6E1A93D8BEAEC77D5C981CE /* Pods */ = {
@@ -507,6 +518,7 @@
 				D349FC6D22992419003AF4B9 /* AppDelegate.swift in Sources */,
 				D3BE9197229927ED004E0FB8 /* SignupModel.swift in Sources */,
 				D3BE918A22992619004E0FB8 /* Entity.swift in Sources */,
+				D3E7AF17229985C400EB3934 /* String+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
