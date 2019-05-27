@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lGM-YE-oyS">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Diary List View Controller-->
+        <scene sceneID="ojG-Kf-zAq">
+            <objects>
+                <viewController id="lGM-YE-oyS" customClass="DiaryListViewController" customModule="SearchDiarySampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ic1-ef-qoB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gQ4-rD-ZiO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lGM-YE-oyS" id="bSh-Ss-lYc"/>
+                                    <outlet property="delegate" destination="lGM-YE-oyS" id="SH5-f9-4O7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gQ4-rD-ZiO" firstAttribute="leading" secondItem="SBk-d7-C1R" secondAttribute="leading" id="9tb-BU-9An"/>
+                            <constraint firstItem="SBk-d7-C1R" firstAttribute="bottom" secondItem="gQ4-rD-ZiO" secondAttribute="bottom" id="JBW-Ra-Poa"/>
+                            <constraint firstItem="SBk-d7-C1R" firstAttribute="trailing" secondItem="gQ4-rD-ZiO" secondAttribute="trailing" id="JMu-Wf-lRZ"/>
+                            <constraint firstItem="gQ4-rD-ZiO" firstAttribute="top" secondItem="SBk-d7-C1R" secondAttribute="top" id="fTm-Pa-MsI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SBk-d7-C1R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iuT-W8-YD0">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Zso-0H-v0e">
+                            <rect key="frame" x="105.5" y="7" width="203" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Public"/>
+                                <segment title="Private"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FaO-qV-GhH"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addDiaryBarButton" destination="FaO-qV-GhH" id="Y1Y-uD-AhP"/>
+                        <outlet property="categorySegmentedControl" destination="Zso-0H-v0e" id="AO1-q0-E11"/>
+                        <outlet property="tableView" destination="gQ4-rD-ZiO" id="Rfx-YG-rJl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ne8-SR-eBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="80"/>
+        </scene>
+    </scenes>
+</document>

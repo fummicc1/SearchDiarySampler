@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SearchDiarySampler/Source/Model/SignupModel.swift"
+            timestampString = "580490225.2831891"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "singup(email:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SearchDiarySampler.SignupModel.singup(email: Swift.String, password: Swift.String) -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.SingleTrait, __C.FIRUser&gt;"
+                  moduleName = "SearchDiarySampler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fumiyatanaka/Desktop/iOSDev/SearchDiarySampler/SearchDiarySampler/Source/Model/SignupModel.swift"
+                  timestampString = "580655161.584458"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((RxSwift.SingleEvent&lt;__C.FIRUser&gt;) -&gt; ()) -&gt; RxSwift.Disposable in SearchDiarySampler.SignupModel.singup(email: Swift.String, password: Swift.String) -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.SingleTrait, __C.FIRUser&gt;"
+                  moduleName = "SearchDiarySampler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fumiyatanaka/Desktop/iOSDev/SearchDiarySampler/SearchDiarySampler/Source/Model/SignupModel.swift"
+                  timestampString = "580655161.58576"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
