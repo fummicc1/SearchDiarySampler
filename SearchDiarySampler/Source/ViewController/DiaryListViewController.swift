@@ -10,6 +10,8 @@ class DiaryListViewController: UIInputViewController {
     
     private var viewModel: DiaryListViewModel?
     
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let input = DiaryListViewModel.Input(
@@ -18,15 +20,9 @@ class DiaryListViewController: UIInputViewController {
             changedCategory: categorySegmentedControl.rx.selectedSegmentIndex.asObservable()
         )
         viewModel = DiaryListViewModel(input: input)
-    }
-}
-
-extension DiaryListViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.diaryList.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        viewModel?.diaryListObservable.bind(to: tableView.rx.items(cellIdentifier: "DiaryListCell", cellType: DiaryListTableViewCell.self)) { row, element, cell in
+            cell.displatyDiaryData(element)
+        }.disposed(by: disposeBag)
     }
 }

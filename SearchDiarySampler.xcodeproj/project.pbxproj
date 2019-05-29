@@ -10,6 +10,8 @@
 		2FDAD200E5169163FFC43FB8 /* Pods_SearchDiarySampler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1B54BFCE09D6D332CE5E21 /* Pods_SearchDiarySampler.framework */; };
 		490D23482DE6473985C46E9E /* Pods_SearchDiarySamplerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E125659B51B03BDF95264D8F /* Pods_SearchDiarySamplerUITests.framework */; };
 		A56D5CB35EBA6F6390AAE817 /* Pods_SearchDiarySamplerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AB8560ECBCA8D6E7314E34 /* Pods_SearchDiarySamplerTests.framework */; };
+		D31E45F5229E3BC700007DAB /* DiaryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E45F4229E3BC700007DAB /* DiaryListTableViewCell.swift */; };
+		D31E45F7229E3D2800007DAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D31E45F6229E3D2800007DAB /* GoogleService-Info.plist */; };
 		D349FC6D22992419003AF4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349FC6C22992419003AF4B9 /* AppDelegate.swift */; };
 		D349FC6F22992419003AF4B9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349FC6E22992419003AF4B9 /* SignupViewController.swift */; };
 		D349FC7222992419003AF4B9 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D349FC7022992419003AF4B9 /* Signup.storyboard */; };
@@ -21,7 +23,6 @@
 		D3BE196C229BE818009398AC /* DiaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE196B229BE818009398AC /* DiaryListViewController.swift */; };
 		D3BE196E229BE822009398AC /* DiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE196D229BE822009398AC /* DiaryListViewModel.swift */; };
 		D3BE1970229BE82D009398AC /* DiaryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE196F229BE82D009398AC /* DiaryListModel.swift */; };
-		D3BE918722992563004E0FB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3BE918622992563004E0FB8 /* GoogleService-Info.plist */; };
 		D3BE918A22992619004E0FB8 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE918922992619004E0FB8 /* Entity.swift */; };
 		D3BE918C2299262B004E0FB8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE918B2299262B004E0FB8 /* User.swift */; };
 		D3BE918E22992665004E0FB8 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE918D22992665004E0FB8 /* Diary.swift */; };
@@ -53,6 +54,8 @@
 		764AEE3BD4FC02636F3DC239 /* Pods-SearchDiarySamplerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDiarySamplerTests.debug.xcconfig"; path = "Target Support Files/Pods-SearchDiarySamplerTests/Pods-SearchDiarySamplerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9FE8CD82B9F63502642B8297 /* Pods-SearchDiarySamplerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDiarySamplerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SearchDiarySamplerUITests/Pods-SearchDiarySamplerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB1B54BFCE09D6D332CE5E21 /* Pods_SearchDiarySampler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchDiarySampler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31E45F4229E3BC700007DAB /* DiaryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListTableViewCell.swift; sourceTree = "<group>"; };
+		D31E45F6229E3D2800007DAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D349FC6922992419003AF4B9 /* SearchDiarySampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDiarySampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D349FC6C22992419003AF4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D349FC6E22992419003AF4B9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		D3BE196B229BE818009398AC /* DiaryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewController.swift; sourceTree = "<group>"; };
 		D3BE196D229BE822009398AC /* DiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewModel.swift; sourceTree = "<group>"; };
 		D3BE196F229BE82D009398AC /* DiaryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListModel.swift; sourceTree = "<group>"; };
-		D3BE918622992563004E0FB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3BE918922992619004E0FB8 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		D3BE918B2299262B004E0FB8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D3BE918D22992665004E0FB8 /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D31E45F3229E3BB700007DAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D31E45F4229E3BC700007DAB /* DiaryListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D349FC6022992419003AF4B9 = {
 			isa = PBXGroup;
 			children = (
@@ -173,10 +183,11 @@
 		D3BE9185229924CB004E0FB8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D3E7AF15229985B200EB3934 /* Extension */,
 				D349FC6C22992419003AF4B9 /* AppDelegate.swift */,
 				D3BE91882299260F004E0FB8 /* Data */,
+				D3E7AF15229985B200EB3934 /* Extension */,
 				D3BE91932299277B004E0FB8 /* Model */,
+				D31E45F3229E3BB700007DAB /* View */,
 				D3BE918F2299272C004E0FB8 /* ViewController */,
 				D3BE919022992733004E0FB8 /* ViewModel */,
 			);
@@ -224,8 +235,8 @@
 		D3BE91922299274D004E0FB8 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
-				D3BE918622992563004E0FB8 /* GoogleService-Info.plist */,
 				D349FC782299241A003AF4B9 /* Info.plist */,
+				D31E45F6229E3D2800007DAB /* GoogleService-Info.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -379,8 +390,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D349FC772299241A003AF4B9 /* LaunchScreen.storyboard in Resources */,
-				D3BE918722992563004E0FB8 /* GoogleService-Info.plist in Resources */,
 				D349FC742299241A003AF4B9 /* Assets.xcassets in Resources */,
+				D31E45F7229E3D2800007DAB /* GoogleService-Info.plist in Resources */,
 				D349FC7222992419003AF4B9 /* Signup.storyboard in Resources */,
 				D3BE196A229BE7E3009398AC /* DiaryList.storyboard in Resources */,
 			);
@@ -527,6 +538,7 @@
 				D3BE196E229BE822009398AC /* DiaryListViewModel.swift in Sources */,
 				D3BE9195229927A0004E0FB8 /* SignupViewModel.swift in Sources */,
 				D3BE1970229BE82D009398AC /* DiaryListModel.swift in Sources */,
+				D31E45F5229E3BC700007DAB /* DiaryListTableViewCell.swift in Sources */,
 				D3BE918C2299262B004E0FB8 /* User.swift in Sources */,
 				D3BE918E22992665004E0FB8 /* Diary.swift in Sources */,
 				D349FC6F22992419003AF4B9 /* SignupViewController.swift in Sources */,

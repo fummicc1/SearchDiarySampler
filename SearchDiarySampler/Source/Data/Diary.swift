@@ -15,6 +15,48 @@ extension Entity {
         let category: Category
         let senderRef: DocumentReference
         
+        init(data: [String: Any]) {
+            if let postDate = data["posted_at"] as? Timestamp {
+                self.postDate = postDate
+            } else {
+                self.postDate = Timestamp()
+            }
+            if let title = data["title"] as? String {
+                self.title = title
+            } else {
+                self.title = ""
+            }
+            if let content = data["content"] as? String {
+                self.content = content
+            } else {
+                self.content = ""
+            }
+            if let rawValue = data["category"] as? String, let category = Category(rawValue: rawValue) {
+                self.category = category
+            } else {
+                self.category = .publicDiary
+            }
+            if let senderRef = data["sender_ref"] as? DocumentReference {
+                self.senderRef = senderRef
+            } else {
+                self.senderRef = Firestore.firestore().collection("users").document("failure")
+            }
+        }
+        
+        init(
+            postDate: Timestamp,
+            title: String,
+            content: String,
+            category: Category,
+            senderRef: DocumentReference
+            ) {
+            self.postDate = postDate
+            self.title = title
+            self.content = content
+            self.category = category
+            self.senderRef = senderRef
+        }
+        
         static func createDummy() -> Diary {
             return Diary(
                 postDate: Timestamp(),

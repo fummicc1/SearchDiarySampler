@@ -16,10 +16,7 @@ final class SignupViewModel {
     let canClickRegisterButton: Observable<Bool>
     var isSignup: Observable<Bool> = Observable.just(false)
     
-    private let userModel = BehaviorRelay<User?>(value: nil)
-    var user: User? {
-        return userModel.value
-    }
+    private let userModel = PublishSubject<User?>()
     
     init(
         model: SignupModel = SignupModel(),
