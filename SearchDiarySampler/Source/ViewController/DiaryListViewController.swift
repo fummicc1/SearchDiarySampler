@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class DiaryListViewController: UIInputViewController {
+class DiaryListViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var addDiaryBarButton: UIBarButtonItem!

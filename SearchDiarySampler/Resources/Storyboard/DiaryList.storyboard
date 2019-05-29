@@ -76,10 +76,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="lGM-YE-oyS" id="bSh-Ss-lYc"/>
-                                    <outlet property="delegate" destination="lGM-YE-oyS" id="SH5-f9-4O7"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
