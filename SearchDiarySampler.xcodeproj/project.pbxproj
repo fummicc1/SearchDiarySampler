@@ -12,6 +12,8 @@
 		A56D5CB35EBA6F6390AAE817 /* Pods_SearchDiarySamplerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AB8560ECBCA8D6E7314E34 /* Pods_SearchDiarySamplerTests.framework */; };
 		D31E45F5229E3BC700007DAB /* DiaryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E45F4229E3BC700007DAB /* DiaryListTableViewCell.swift */; };
 		D31E45F7229E3D2800007DAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D31E45F6229E3D2800007DAB /* GoogleService-Info.plist */; };
+		D3244B6322A0202800B9F733 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3244B6222A0202800B9F733 /* UserManager.swift */; };
+		D3244B6522A02A9C00B9F733 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3244B6422A02A9C00B9F733 /* Alert.storyboard */; };
 		D349FC6D22992419003AF4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349FC6C22992419003AF4B9 /* AppDelegate.swift */; };
 		D349FC6F22992419003AF4B9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349FC6E22992419003AF4B9 /* SignupViewController.swift */; };
 		D349FC7222992419003AF4B9 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D349FC7022992419003AF4B9 /* Signup.storyboard */; };
@@ -60,6 +62,8 @@
 		CB1B54BFCE09D6D332CE5E21 /* Pods_SearchDiarySampler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchDiarySampler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31E45F4229E3BC700007DAB /* DiaryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListTableViewCell.swift; sourceTree = "<group>"; };
 		D31E45F6229E3D2800007DAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3244B6222A0202800B9F733 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		D3244B6422A02A9C00B9F733 /* Alert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
 		D349FC6922992419003AF4B9 /* SearchDiarySampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDiarySampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D349FC6C22992419003AF4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D349FC6E22992419003AF4B9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				D349FC6C22992419003AF4B9 /* AppDelegate.swift */,
+				D3244B6222A0202800B9F733 /* UserManager.swift */,
 				D3BE91882299260F004E0FB8 /* Data */,
 				D3E7AF15229985B200EB3934 /* Extension */,
 				D3BE91932299277B004E0FB8 /* Model */,
@@ -239,6 +244,7 @@
 				D349FC752299241A003AF4B9 /* LaunchScreen.storyboard */,
 				D349FC7022992419003AF4B9 /* Signup.storyboard */,
 				D3ADD3E0229F716D000A3935 /* AddDiary.storyboard */,
+				D3244B6422A02A9C00B9F733 /* Alert.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -403,6 +409,7 @@
 			files = (
 				D349FC772299241A003AF4B9 /* LaunchScreen.storyboard in Resources */,
 				D349FC742299241A003AF4B9 /* Assets.xcassets in Resources */,
+				D3244B6522A02A9C00B9F733 /* Alert.storyboard in Resources */,
 				D31E45F7229E3D2800007DAB /* GoogleService-Info.plist in Resources */,
 				D349FC7222992419003AF4B9 /* Signup.storyboard in Resources */,
 				D3ADD3E1229F716D000A3935 /* AddDiary.storyboard in Resources */,
@@ -554,6 +561,7 @@
 				D3BE1970229BE82D009398AC /* DiaryListModel.swift in Sources */,
 				D31E45F5229E3BC700007DAB /* DiaryListTableViewCell.swift in Sources */,
 				D3BE918C2299262B004E0FB8 /* User.swift in Sources */,
+				D3244B6322A0202800B9F733 /* UserManager.swift in Sources */,
 				D3BE918E22992665004E0FB8 /* Diary.swift in Sources */,
 				D349FC6F22992419003AF4B9 /* SignupViewController.swift in Sources */,
 				D349FC6D22992419003AF4B9 /* AppDelegate.swift in Sources */,

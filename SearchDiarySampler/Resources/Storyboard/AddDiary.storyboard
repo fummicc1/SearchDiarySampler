@@ -80,11 +80,11 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="backButton" destination="gTH-yS-6sy" id="V7v-qg-RQl"/>
-                        <outlet property="contentTextView" destination="G9v-fj-aJ5" id="2ct-ox-Ucj"/>
-                        <outlet property="postDiaryButton" destination="EDd-z0-emx" id="zzL-ew-Pbi"/>
-                        <outlet property="switchCategoryButton" destination="RBl-Hr-fAj" id="Akd-4R-d58"/>
-                        <outlet property="titleTextField" destination="JEx-UP-Iq9" id="v9q-SY-6A6"/>
+                        <outlet property="backButton" destination="gTH-yS-6sy" id="MSe-iy-uCU"/>
+                        <outlet property="contentTextView" destination="G9v-fj-aJ5" id="KSy-D7-pDX"/>
+                        <outlet property="postDiaryButton" destination="EDd-z0-emx" id="FM6-mG-fYM"/>
+                        <outlet property="switchCategoryButton" destination="RBl-Hr-fAj" id="Thr-kj-RMZ"/>
+                        <outlet property="titleTextField" destination="JEx-UP-Iq9" id="6Jj-07-P1d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRe-L6-S1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
