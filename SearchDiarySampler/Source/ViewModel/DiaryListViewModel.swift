@@ -6,7 +6,6 @@ final class DiaryListViewModel {
     
     struct Input {
         let selectedItem: Observable<IndexPath>
-        let tappedAddDiaryButton: Observable<Void>
         let changedCategory: Observable<Int>
     }
     
@@ -62,7 +61,5 @@ final class DiaryListViewModel {
                 break
             }
         }.disposed(by: disposeBag)
-        
-        
     }
 }

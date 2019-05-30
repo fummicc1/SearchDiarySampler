@@ -16,7 +16,6 @@ class DiaryListViewController: UIViewController {
         super.viewDidLoad()
         let input = DiaryListViewModel.Input(
             selectedItem: tableView.rx.itemSelected.asObservable(),
-            tappedAddDiaryButton: addDiaryBarButton.rx.tap.asObservable(),
             changedCategory: categorySegmentedControl.rx.selectedSegmentIndex.asObservable()
         )
         viewModel = DiaryListViewModel(input: input)
@@ -24,5 +23,11 @@ class DiaryListViewController: UIViewController {
         viewModel?.diaryListObservable.bind(to: tableView.rx.items(cellIdentifier: "DiaryListCell", cellType: DiaryListTableViewCell.self)) { row, element, cell in
             cell.displatyDiaryData(element)
         }.disposed(by: disposeBag)
+        
+        addDiaryBarButton.rx.tap.subscribe { [unowned self] event in
+            let viewController = UIStoryboard(name: "AddDiary", bundle: nil).instantiateInitialViewController()!
+            let navigationController = UINavigationController(rootViewController: viewController)
+            self.present(navigationController, animated: true, completion: nil)
+        }
     }
 }
