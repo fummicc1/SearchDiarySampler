@@ -28,6 +28,6 @@ class DiaryListViewController: UIViewController {
             let viewController = UIStoryboard(name: "AddDiary", bundle: nil).instantiateInitialViewController()!
             let navigationController = UINavigationController(rootViewController: viewController)
             self.present(navigationController, animated: true, completion: nil)
-        }
+        }.disposed(by: disposeBag)
     }
 }

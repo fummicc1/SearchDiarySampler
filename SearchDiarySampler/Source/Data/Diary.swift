@@ -47,6 +47,16 @@ extension Entity {
             self.senderRef = senderRef
         }
         
+        func getDictionary() -> [String: Any] {
+            return [
+                "posted_at": postDate,
+                "title": title,
+                "content": content,
+                "category": category.rawValue,
+                "sender_ref": senderRef
+            ]
+        }
+        
         static func createDummy() -> Diary {
             return Diary(
                 postDate: Timestamp(),
