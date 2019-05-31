@@ -29,6 +29,7 @@
 		D3BE196C229BE818009398AC /* DiaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE196B229BE818009398AC /* DiaryListViewController.swift */; };
 		D3BE196E229BE822009398AC /* DiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE196D229BE822009398AC /* DiaryListViewModel.swift */; };
 		D3BE1970229BE82D009398AC /* DiaryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE196F229BE82D009398AC /* DiaryListModel.swift */; };
+		D3BE842F22A0FDD600542939 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE842E22A0FDD600542939 /* AlertViewController.swift */; };
 		D3BE918A22992619004E0FB8 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE918922992619004E0FB8 /* Entity.swift */; };
 		D3BE918C2299262B004E0FB8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE918B2299262B004E0FB8 /* User.swift */; };
 		D3BE918E22992665004E0FB8 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE918D22992665004E0FB8 /* Diary.swift */; };
@@ -85,6 +86,7 @@
 		D3BE196B229BE818009398AC /* DiaryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewController.swift; sourceTree = "<group>"; };
 		D3BE196D229BE822009398AC /* DiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewModel.swift; sourceTree = "<group>"; };
 		D3BE196F229BE82D009398AC /* DiaryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListModel.swift; sourceTree = "<group>"; };
+		D3BE842E22A0FDD600542939 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		D3BE918922992619004E0FB8 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		D3BE918B2299262B004E0FB8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D3BE918D22992665004E0FB8 /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				D349FC6E22992419003AF4B9 /* SignupViewController.swift */,
 				D3BE196B229BE818009398AC /* DiaryListViewController.swift */,
 				D3BD703F229F764A0066993D /* AddDiaryViewController.swift */,
+				D3BE842E22A0FDD600542939 /* AlertViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				D3BE918C2299262B004E0FB8 /* User.swift in Sources */,
 				D3244B6322A0202800B9F733 /* UserManager.swift in Sources */,
 				D3BE918E22992665004E0FB8 /* Diary.swift in Sources */,
+				D3BE842F22A0FDD600542939 /* AlertViewController.swift in Sources */,
 				D349FC6F22992419003AF4B9 /* SignupViewController.swift in Sources */,
 				D349FC6D22992419003AF4B9 /* AppDelegate.swift in Sources */,
 				D3BE9197229927ED004E0FB8 /* SignupModel.swift in Sources */,
@@ -749,6 +753,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "$(SRCROOT)/SearchDiarySampler/Resources/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -768,6 +773,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "$(SRCROOT)/SearchDiarySampler/Resources/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

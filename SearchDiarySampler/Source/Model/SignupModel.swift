@@ -21,8 +21,16 @@ final class SignupModel {
                         singleEvent(.error(FirebaseAPIError.failedSendEmail))
                         return
                     }
-                    
-                    singleEvent(.success(result.user))
+                    Firestore.firestore().collection("users").document(result.user.uid).setData([
+                        "authentication_id": result.user.uid,
+                        "identity": "",
+                        "user_name": "",
+                    ]) { error in
+                        if let error = error {
+                            fatalError("\(error)")
+                        }
+                        singleEvent(.success(result.user))
+                    }
                 })
             })
             return Disposables.create()

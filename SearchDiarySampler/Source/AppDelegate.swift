@@ -16,18 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let diaryListViewController = UIStoryboard(name: "DiaryList", bundle: nil).instantiateInitialViewController() as! DiaryListViewController
             window?.rootViewController = UINavigationController(rootViewController: diaryListViewController)
             window?.makeKeyAndVisible()
-        } else {            
+        } else {
+            guard let alertViewController = UIStoryboard(name: "Alert", bundle: nil).instantiateInitialViewController() else {
+                return true
+            }
+            window?.rootViewController = alertViewController
+            window?.makeKeyAndVisible()
         }
         return true
     }
 }
-
-extension AppDelegate {
-    @objc fileprivate func openGmail() {
-        guard let url = URL(string: "googlegmail://") else { return }
-        if UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
-    }
-}
-

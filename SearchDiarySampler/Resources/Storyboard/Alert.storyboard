@@ -10,19 +10,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Alert View Controller-->
         <scene sceneID="MEF-TC-JP9">
             <objects>
-                <viewController id="u8v-14-fCH" sceneMemberID="viewController">
+                <viewController id="u8v-14-fCH" customClass="AlertViewController" customModule="SearchDiarySampler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J3S-IS-RZA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="確認用メールアドレス" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-7o-hXe">
+                                <rect key="frame" x="32" y="76" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBD-q1-lEQ">
+                                <rect key="frame" x="149" y="403" width="116" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Atg-O8-4uW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Gmailを開く"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xBD-q1-lEQ" firstAttribute="centerX" secondItem="J3S-IS-RZA" secondAttribute="centerX" id="H8T-jo-iRr"/>
+                            <constraint firstItem="fdh-7o-hXe" firstAttribute="leading" secondItem="l2A-tS-uAa" secondAttribute="leading" constant="32" id="aAg-lM-Wkr"/>
+                            <constraint firstItem="fdh-7o-hXe" firstAttribute="top" secondItem="l2A-tS-uAa" secondAttribute="top" constant="32" id="ddR-f8-ohy"/>
+                            <constraint firstItem="xBD-q1-lEQ" firstAttribute="centerY" secondItem="J3S-IS-RZA" secondAttribute="centerY" id="hIE-n3-1fP"/>
+                            <constraint firstItem="l2A-tS-uAa" firstAttribute="trailing" secondItem="fdh-7o-hXe" secondAttribute="trailing" constant="32" id="psi-iu-md2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="l2A-tS-uAa"/>
                     </view>
+                    <connections>
+                        <outlet property="openGmailButton" destination="xBD-q1-lEQ" id="H9U-VC-PvV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ur-JX-G8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
         </scene>
     </scenes>
 </document>
