@@ -5,11 +5,11 @@ import Firebase
 
 final class AddDiaryViewModel {
     
-    enum ImCompletedInput: Equatable {
-        case titleAndContent(message: String)
-        case title(message: String)
-        case content(message: String)
-        case nothing
+    enum ImCompletedInput: String, Equatable {
+        case titleAndContent = "タイトルとコンテントが未入力です。"
+        case title = "タイトルが未入力です。"
+        case content = "コンテントが未入力です。"
+        case nothing = "ぺきかん!"
     }
     
     struct Input {
@@ -27,6 +27,8 @@ final class AddDiaryViewModel {
     let output: Output
     let model: AddDiaryModel
     
+    private let disposeBag = DisposeBag()
+    
     init(
         model: AddDiaryModel = AddDiaryModel(),
         input: Input
@@ -35,26 +37,22 @@ final class AddDiaryViewModel {
         let allInputObservables = Observable.combineLatest(input.titleEdited, input.contentEdited, input.switchedOpenRange)
         let imCompletedInput = input.tappedPostDiaryButton.withLatestFrom(allInputObservables).map { (title, content, openRange) -> ImCompletedInput in
             if title.isEmpty, content.isEmpty {
-                return .titleAndContent(message: "タイトルとコンテントが未入力です。")
+                return .titleAndContent
             }
             if title.isEmpty {
-                return .title(message: "タイトルが未入力です。")
+                return .title
             }
             if content.isEmpty {
-                return .content(message: "コンテントが未入力です。")
+                return .content
             }
             return .nothing
         }
-        let isPersisting =
-            imCompletedInput
-                .filter({$0 == .nothing})
-                .withLatestFrom(allInputObservables)
-                .flatMap { (title, content, openRange) -> Observable<Bool> in
-                    let senderRef = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid)
-                    let diary = Entity.Diary(postDate: Timestamp(), title: title, content: content, category: openRange, senderRef: senderRef)
-                    let request = model.persistDiary(diary: diary).catchErrorJustReturn(false).asObservable()
-                    return request
-        }
+        let isPersisting = input.tappedPostDiaryButton.withLatestFrom(allInputObservables).flatMap { (title, content, openRange) -> Observable<Bool> in
+            let senderRef = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid)
+            let diary = Entity.Diary(postDate: Timestamp(), title: title, content: content, category: openRange, senderRef: senderRef)
+            let request = model.persistDiary(diary: diary).catchErrorJustReturn(false).asObservable()
+            return request
+        }.share()
         let output = Output(imCompletedInput: imCompletedInput, isPersisting: isPersisting)
         self.output = output
     }

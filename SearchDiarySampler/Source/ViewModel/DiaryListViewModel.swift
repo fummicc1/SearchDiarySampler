@@ -26,19 +26,7 @@ final class DiaryListViewModel {
         ) {
         self.model = model
         
-        model.getDiaryDummies { [unowned self] diaryList in
-            self.publicDiaryListData = []
-            self.privateDiaryListData = []
-            diaryList.forEach({ (diary) in
-                if diary.category == .publicDiary {
-                    self.publicDiaryListData.append(diary)
-                } else if diary.category == .privateDiary {
-                    self.privateDiaryListData.append(diary)
-                }
-            })
-        }
-        
-//        model.downloadAllDiaries { [unowned self] diaryList in
+//        model.getDiaryDummies { [unowned self] diaryList in
 //            self.publicDiaryListData = []
 //            self.privateDiaryListData = []
 //            diaryList.forEach({ (diary) in
@@ -49,6 +37,18 @@ final class DiaryListViewModel {
 //                }
 //            })
 //        }
+        
+        model.downloadAllDiaries { [unowned self] diaryList in
+            self.publicDiaryListData = []
+            self.privateDiaryListData = []
+            diaryList.forEach({ (diary) in
+                if diary.category == .publicDiary {
+                    self.publicDiaryListData.append(diary)
+                } else if diary.category == .privateDiary {
+                    self.privateDiaryListData.append(diary)
+                }
+            })
+        }
         
         input.changedCategory.subscribe { [unowned self] event in
             guard let element = event.element else { return }

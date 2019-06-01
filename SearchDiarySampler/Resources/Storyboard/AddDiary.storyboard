@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RBl-Hr-fAj">
-                                <rect key="frame" x="349" y="603" width="51" height="31"/>
+                                <rect key="frame" x="349" y="627" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="8m0-Qk-353"/>
                                     <constraint firstAttribute="width" constant="49" id="Hzx-tZ-eve"/>
                                 </constraints>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プライベート設定" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1if-X1-fYn">
-                                <rect key="frame" x="16" y="603" width="323" height="31"/>
+                                <rect key="frame" x="16" y="627" width="323" height="31"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,28 +38,37 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G9v-fj-aJ5">
-                                <rect key="frame" x="32" y="182" width="350" height="357"/>
+                                <rect key="frame" x="32" y="182" width="350" height="381"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDd-z0-emx">
-                                <rect key="frame" x="96" y="666" width="222" height="100"/>
+                                <rect key="frame" x="96" y="690" width="222" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="w9J-B5-CUC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="保存"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMe-Ss-nbh">
+                                <rect key="frame" x="32" y="806" width="350" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1if-X1-fYn" firstAttribute="top" secondItem="G9v-fj-aJ5" secondAttribute="bottom" constant="64" id="0ew-ge-rSx"/>
                             <constraint firstItem="JEx-UP-Iq9" firstAttribute="top" secondItem="OHF-rB-bj2" secondAttribute="top" constant="32" id="171-gi-cGC"/>
-                            <constraint firstItem="OHF-rB-bj2" firstAttribute="bottom" secondItem="EDd-z0-emx" secondAttribute="bottom" constant="96" id="4xL-Sg-uel"/>
+                            <constraint firstItem="MMe-Ss-nbh" firstAttribute="leading" secondItem="OHF-rB-bj2" secondAttribute="leading" constant="32" id="7s2-0k-CJy"/>
                             <constraint firstItem="1if-X1-fYn" firstAttribute="height" secondItem="RBl-Hr-fAj" secondAttribute="height" id="Il2-L5-ygP"/>
+                            <constraint firstItem="OHF-rB-bj2" firstAttribute="bottom" secondItem="MMe-Ss-nbh" secondAttribute="bottom" constant="32" id="Iz0-p1-Epz"/>
+                            <constraint firstItem="OHF-rB-bj2" firstAttribute="trailing" secondItem="MMe-Ss-nbh" secondAttribute="trailing" constant="32" id="MSq-Jv-4l3"/>
                             <constraint firstItem="EDd-z0-emx" firstAttribute="top" secondItem="1if-X1-fYn" secondAttribute="bottom" constant="32" id="Rbq-JJ-YGw"/>
+                            <constraint firstItem="MMe-Ss-nbh" firstAttribute="top" secondItem="EDd-z0-emx" secondAttribute="bottom" constant="16" id="UVH-vi-2EB"/>
                             <constraint firstItem="OHF-rB-bj2" firstAttribute="trailing" secondItem="EDd-z0-emx" secondAttribute="trailing" constant="96" id="Ue1-Y0-nU3"/>
                             <constraint firstItem="OHF-rB-bj2" firstAttribute="trailing" secondItem="RBl-Hr-fAj" secondAttribute="trailing" constant="16" id="W6r-gd-DFT"/>
                             <constraint firstItem="OHF-rB-bj2" firstAttribute="trailing" secondItem="JEx-UP-Iq9" secondAttribute="trailing" constant="32" id="WcW-Ek-pzo"/>
@@ -82,6 +91,7 @@
                     <connections>
                         <outlet property="backButton" destination="gTH-yS-6sy" id="MSe-iy-uCU"/>
                         <outlet property="contentTextView" destination="G9v-fj-aJ5" id="KSy-D7-pDX"/>
+                        <outlet property="inputStateLabel" destination="MMe-Ss-nbh" id="ZLb-NE-W1K"/>
                         <outlet property="postDiaryButton" destination="EDd-z0-emx" id="FM6-mG-fYM"/>
                         <outlet property="switchCategoryButton" destination="RBl-Hr-fAj" id="Thr-kj-RMZ"/>
                         <outlet property="titleTextField" destination="JEx-UP-Iq9" id="6Jj-07-P1d"/>

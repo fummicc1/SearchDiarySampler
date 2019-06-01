@@ -48,6 +48,7 @@ class SignupViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
             }
         }).disposed(by: disposeBag)
+        viewModel?.isSignup.bind(to: registerButton.rx.isEnabled).disposed(by: disposeBag)
     }
 }
 
